@@ -1,5 +1,5 @@
 <?php
-
+include $app_root . '/' . $site_path . '/settings.k8s.php';
 // @codingStandardsIgnoreFile
 
 /**
