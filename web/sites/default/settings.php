@@ -1,5 +1,5 @@
 <?php
-include $app_root . '/' . $site_path . '/settings.k8s.php';
+
 // @codingStandardsIgnoreFile
 
 /**
@@ -769,8 +769,4 @@ $settings['entity_update_batch_size'] = 50;
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 $config_directories['sync'] = '../config/sync';
-if (getenv('OPENSHIFT_BUILD_NAME')) {
-  if (file_exists($app_root . '/' . $site_path . '/settings.openshift.php')) {
-    include $app_root . '/' . $site_path . '/settings.openshift.php';
-  }
-}
+include $app_root . '/' . $site_path . '/settings.k8s.php';
